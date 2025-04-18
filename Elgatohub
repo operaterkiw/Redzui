@@ -20,17 +20,17 @@ Tab1:AddButton({"Test Print", function()
 print("Hello World!")
 end})
 
-local Toggle1 = Home Tab:AddToggle({
+local Toggle1 = Tab 1:AddToggle({
   Name = "tp delays",
-  Description = "Idk",
+  Description = "setdelays",
   Default = false
 })
 
 Tab1:AddSlider({
   Name = "tp delays",
-  Min = 1,
+  Min = 0.1,
   Max = 100,
-  Increase = 1,
+  Increase = 0.5,
   Default = 16,
   Callback = function(Value)
   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
