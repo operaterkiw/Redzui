@@ -1,4 +1,7 @@
 --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+--[[
 Credits goes to REDz.
 And you can find more here! [This is v5 version]
 https://github.com/REDzHUB/RedzLibV5
@@ -10,7 +13,7 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzH
 local Window = redzlib:MakeWindow({
   Title = "ELGATO HUB",
   SubTitle = "Arise Crossover",
-  SaveFolder = "Elgato Config"
+  SaveFolder = "Redz Config"
 })
 
 --Tabs
@@ -24,13 +27,13 @@ print("Hello World!")
 end})
 
 local Toggle1 = Tab1:AddToggle({
-  Name = "Tp delays",
+  Name = "Speed",
   Description = "Idk",
   Default = false
 })
 
 Tab1:AddSlider({
-  Name = "TP delays",
+  Name = "Speed",
   Min = 1,
   Max = 100,
   Increase = 1,
