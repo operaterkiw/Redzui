@@ -8,12 +8,12 @@ https://github.com/REDzHUB/RedzLibV5
 And maybe some things may not work correctly (doesn't to me)
 ]]--
 
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
 
 local Window = redzlib:MakeWindow({
   Title = "ELGATO HUB",
   SubTitle = "Arise Crossover",
-  SaveFolder = "Redz Config"
+  SaveFolder = "elgato Config"
 })
 
 --Tabs
@@ -26,7 +26,7 @@ Tab1:AddButton({"Print", function()
 print("Hello World!")
 end})
 
-local Toggle1 = Tab1:AddToggle({
+local Toggle1 = Home Tab:AddToggle({
   Name = "Speed",
   Description = "Idk",
   Default = false
