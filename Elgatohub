@@ -8,9 +8,9 @@ And maybe some things may not work correctly (doesn't to me)
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "Test",
-  SubTitle = "hello",
-  SaveFolder = "Redz Config"
+  Title = "ELGATO HUB",
+  SubTitle = "Arise Crossover",
+  SaveFolder = "Elgato Config"
 })
 
 --Tabs
@@ -24,13 +24,13 @@ print("Hello World!")
 end})
 
 local Toggle1 = Tab1:AddToggle({
-  Name = "Speed",
+  Name = "Tp delays",
   Description = "Idk",
   Default = false
 })
 
 Tab1:AddSlider({
-  Name = "Speed",
+  Name = "TP delays",
   Min = 1,
   Max = 100,
   Increase = 1,
