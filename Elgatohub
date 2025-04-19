@@ -13,7 +13,7 @@ Window:AddMinimizeButton({
     Corner = { CornerRadius = UDim.new(35, 1) },
 })
 
-local Tab1 = Window:MakeTab({"Tab 1", "cool"})
+local Tab1 = Window:MakeTab({"Home Tab", "cool"})
 
 --Disscord
 
@@ -32,17 +32,34 @@ end})
 
 local Toggle1 = Tab1:AddToggle({
   Name = "Speed",
-  Description = "Idk",
+  Description = "Set speed",
   Default = false
 })
 
 Tab1:AddSlider({
   Name = "Speed",
-  Min = 1,
+  Min = 0.1,
   Max = 100,
-  Increase = 1,
-  Default = 16,
+  Increase = 0.1,
+  Default = 0.5,
   Callback = function(Value)
   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+  end
+})
+
+--Theme
+
+local Tab2 = Window:MakeTab({"Theme", "cherry"})
+
+local Section = Tab2:AddSection({"Section"})
+
+local Dropdown = Tab2:AddDropdown({
+  Name = "Themes List",
+  Description = "Select the <font color='rgb(88, 101, 242)'>Number</font>",
+  Options = {"Dark", "Darker", "Purple"},
+  Default = "Dark",
+  Flag = "dropdown teste",
+  Callback = function(Value)
+    
   end
 })
