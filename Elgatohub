@@ -15,6 +15,15 @@ Window:AddMinimizeButton({
 
 local Tab1 = Window:MakeTab({"Tab 1", "cool"})
 
+--Disscord
+
+Tab1:AddDiscordInvite({
+    Name = "ELGATO HUB",
+    Description = "Join server",
+    Logo = "rbxassetid://18751483361",
+    Invite = "Link discord invite",
+})
+
 --Buttons
 
 Tab1:AddButton({"Print", function()
