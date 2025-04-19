@@ -3,10 +3,15 @@ local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao1
 local Window = redzlib:MakeWindow({
   Title = "ELGATO HUB",
   SubTitle = "Arise Crossover",
-  SaveFolder = Version: Last ver for redz ui"
+  SaveFolder = "Version: Last ver for redz ui"
 })
 
 --Tabs
+
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://115099027597207", BackgroundTransparency = 0 },
+    Corner = { CornerRadius = UDim.new(35, 1) },
+})
 
 local Tab1 = Window:MakeTab({"Tab 1", "cool"})
 
